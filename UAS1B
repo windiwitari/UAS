@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+public class UAS1B {
+        public static void main(String[] args) {
+            ArrayList<Integer> Kendaraan = new ArrayList<>();
+            Random Angka = new Random();
+
+            for (int data = 0; data < 200; data++) {
+                int s = Angka.nextInt(201);
+                Kendaraan.add(s);
+            }
+
+            System.out.println("Kecepatan Kendaraan:");
+            for (int kecepatan : Kendaraan) {
+                if (kecepatan >= 80 && kecepatan <= 100 && kecepatan < 80 ) {
+                    System.out.println("kecepatan +  km/jam");
+                }
+            }
+
+        }
+    }
+
+
